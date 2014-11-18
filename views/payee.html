@@ -1,0 +1,26 @@
+<h1>Payees </h1>
+<a href="#/crpayee" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> Create Payee</a>
+
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Account #</th>
+			<th>IBAN</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="(key, usr) in root.users.users">
+			<td><span ng-hide="showDetails" >{{ usr.name }}</span><input class="form-control input-sm" ng-show="showDetails" ng-model="user.editname" value="{{usr.name}}" /></td>
+			<td><span ng-hide="showDetails">{{ usr.acc }}</span><input class="form-control input-sm" ng-show="showDetails"  ng-model="user.editaccount" alue="{{usr.acc}}" /></td>
+			<td><span ng-hide="showDetails">{{ usr.iban }}</span><input class="form-control input-sm" ng-show="showDetails"  ng-model="user.editiban" value="{{usr.iban}}" /></td>
+			<td>
+				<a ng-hide="showDetails" ng-click="yy(key, usr); showDetails = ! showDetails">Edit</a>
+				<a ng-show="showDetails" ng-click="xx(key, user); showDetails = ! showDetails">save</a>
+				<a ng-show="showDetails" ng-click="showDetails = ! showDetails">cancel</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+

@@ -1,0 +1,224 @@
+﻿body {
+    background: #eaeaea;
+    font-family: 'Open Sans';
+}
+/** {
+ transition: all 0.5s ease;
+}*/
+h1 {
+    color: #f16531;
+    font-weight: 600;
+    margin-bottom: 30px;
+    border-bottom:2px dashed #a1a1a1; padding-bottom:10px;
+}
+p {
+ margin-top:15px; color:#999;
+} 
+
+
+.list_item label {
+    background: #f8d7c8;
+    display: block;
+    color: #f16531;
+    font-weight: 600;
+    height: 35px;
+    padding-top: 10px;
+}
+
+.list_item img {
+    margin-left: 10px;
+}
+
+.stat label, .stat span {
+    padding-left: 10px;
+}
+
+.stat span {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.stat div span:last-child {
+    border-bottom: none;
+}
+.iban {
+background:  #ddd;
+    border: 1px dotted #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.crp {
+    padding-top:11px; padding-bottom:10px;
+}
+.form-group label {
+    color:#f16531;
+}
+hr {
+ border-color:#fff; border-style:dotted;
+}
+.btn-primary {
+background:#fff; color:#0053A6; border-color:#0053A6;
+}
+    .btn-primary:hover, .btn-primary:focus {
+    background:#0053A6; color:#fff; border-color:#fff;
+    }
+.formctrl {
+ text-align:center; margin-top:30px; border-top: 5px dotted #fff;  padding-top:30px; padding-bottom:10px; 
+}
+    .formctrl .btn {
+     margin-right:15px;
+    }
+    .formctrl .btn-link {
+    margin-top:-20px;
+    }
+.btn-link, .btn-link:hover, .btn-link:focus {
+ color:#0053A6;
+}
+.btn-primary {
+margin-bottom:20px;
+}
+/****--------header---------****/
+
+header {
+    background: #104684;
+    height: 100vh;
+}
+
+header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+header li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+    header li a {
+    color: #fff; display:block;
+    }
+        header li a:hover, header li:hover a, header li a:focus  {
+    color: #104684; text-decoration:none;
+    }
+header li:hover {
+        background: #dee8f3;
+    }
+
+  header i {
+    border-right: 1px solid #2b6aa9;
+    margin-right: 5px;
+    text-align: center;
+    width: 30px;
+    }
+/****--------Nav---------****/
+.logo {
+    background: #0053a6;
+}
+nav {
+    background: #fff;
+    box-shadow: 0px 0px 3px #ccc;
+    padding-top: 5px;
+}
+
+    nav img {
+        border-radius: 200px;
+        border: 3px solid #f8d7c8;
+        margin-left: 10px;
+        float: right;
+    }
+
+    nav span {
+        text-align: right;
+        color: #777;
+        margin-top: 5px;
+        float: right;
+        border-left: 1px solid #ccc;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+        nav span:last-child {
+            border: none;
+        }
+
+    nav b {
+        display: block;
+        color: #f16531;
+        font-weight: normal;
+    }
+
+    nav a.btn {
+        background: #f8d7c8;
+        border: 1px solid #f16531;
+        color: #f16531;
+    }
+
+        nav a.btn:hover {
+            color: #fff;
+            background: #f16531;
+            border: 1px solid #f16531;
+        }
+
+    nav div:first-child {
+        border-left: 1px solid #ddd;
+        margin-left: 10px;
+        padding: 5px 0px 5px 10px;
+    }
+table {
+margin-top:20px;
+}
+table  th {
+  background:#f8d7c8; color:#f16531;
+}
+
+/****--------Responsive---------****/
+@media (max-width:991px) {
+    body {
+     padding-top:60px;
+    }
+       nav {
+     display:none;
+    }
+    header {
+    height:auto;
+      position: fixed !important;
+    top: 0;
+    width: 100%;
+    }
+    header ul {
+     position:fixed; top:0px; right:0px; margin:0px; 
+    }
+        header ul li {
+         font-size:0px;  float:right;   padding:0px !important; background:#104684;
+        }
+            header ul li a {
+         display: block;
+    
+    padding: 15px;
+   text-align:center; 
+            }
+ 
+    header ul {
+     margin:0px !important; 
+    }
+    header  ul li i {
+    border:0px; width:25px; text-align:center;  height:28px; font-size:16px !important;  padding-top:5px;
+    }
+    .list_item img {
+    margin:0px;
+    }
+    .list_item label {
+     height:auto; padding:5px;
+    }
+    .list_item span {
+     padding-left:5px; margin-bottom:5px;  display:block;
+    }
+    .list_item div:last-child div span {
+     text-align:right; font-weight:bold; font-size:20px; color:#f16531; border-bottom:10px solid #CCCCCC;
+    }
+
+}
